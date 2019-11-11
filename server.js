@@ -16,9 +16,9 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use('/employees',employeeRouter);
-
 app.use(jsonParser);
+
+app.use('/employees',employeeRouter);
 
 function runServer(port = PORT) {
   return new Promise((resolve, reject) => {
