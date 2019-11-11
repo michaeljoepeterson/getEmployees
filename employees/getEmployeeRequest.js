@@ -9,7 +9,7 @@ function getEmployees(pageNumber,pageSize,url){
 		};
 		request(options,function(error,response,body){
 			//console.log(body);
-			resolve(JSON.parse(body));
+			resolve(body);
 		})
 	});
 

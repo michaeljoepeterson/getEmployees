@@ -10,10 +10,7 @@ router.get('/',(req,res)=>{
 	return getEmployees(pageNumber,pageSize,API_URL)
 
 	.then(data => {
-		return res.send({
-			status:200,
-			message:data
-		})
+		return res.send(data)
 	})
 
 	.catch(err => {
